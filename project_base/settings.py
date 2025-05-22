@@ -55,7 +55,7 @@ ROOT_URLCONF = 'project_base.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['global_templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,3 +121,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# import local_settings
+
+# EMAIL_HOST = local_settings.EMAIL_HOST
+# EMAIL_HOST_USER = local_settings.EMAIL_HOST_USER
+# EMAIL_HOST_PASSWORD = local_settings.EMAIL_HOST_PASSWORD
+# DEFAULT_FROM_EMAIL = local_settings.DEFAULT_FROM_EMAIL
+# EMAIL_PORT = local_settings.EMAIL_PORT
+# EMAIL_USE_TLS = local_settings.EMAIL_USE_TLS
