@@ -42,9 +42,9 @@ Ez egy útmutató ahhoz, hogy hogyan csinálj saját bejelentkezési, regisztrá
         ```
 6. Most már létrehozhatsz egy gitrepot VSCODE-ban, és feltöltheted az adatokat GitHubra. A ``local_settings.py``-ban tárolt érzékeny adatok nem fognak felkerülni a GitHubra, mivel a ``.gitignore`` fájl tartalmazza a fájl nevét. Innentől már futtatható a projekt.
 7. Most már személyre szabhatod az autentikációt a template-ek átírásával. 
-    - A regisztrációról szóló részeket az ``app_reg/templates/registration`` mappában találod.
-    - A bejelentkezésről és az elfelejtett jelszóról szóló részeket (beleértve az email tartalmát) a ``global_templates/registration/`` mappában találod.
-    - A bejelentkezési és regisztrációs template-ek mind az  ``app_reg/static/registration/registration.css`` stílusfájlban találhatók (ami most üres.)
+    - A **regisztrációról** szóló részeket az ``app_reg/templates/registration`` mappában találod.
+    - A **bejelentkezésről** és az **elfelejtett jelszóról** szóló részeket (beleértve az email tartalmát) a ``global_templates/registration/`` mappában találod.
+    - A bejelentkezési és regisztrációs template-ekhez tartozó **stíluslapok** mind az  ``app_reg/static/registration/registration.css`` stílusfájlban találhatók (ami most üres.)
 8. Kis segítség még: Az ``app_reg/templates/registration`` mappában találsz egy kijelentkezést tartalmazó ``kijelentkezes.html``-t, amit bármely html-template-be beilleszthetsz és kijelentkezési gombként használhatsz. Ezt bármely template-ben a következővel tudsz beimportálni:
 ```django
     {% include "registration/kijelentkezes.html" %}
