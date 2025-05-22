@@ -11,7 +11,7 @@ def pelda1(request):
     return HttpResponse('Ez a tesztüzenet1')
 
 @login_required
-@user_passes_test(lambda user : user.is_superuser)  ##  Ide bármilyen függvény jöhet, ami user-t eszik, és bool-t ad vissza!
+@user_passes_test(lambda user : user.is_superuser)  ##  Ide bármilyen függvény jöhet, aminek egy User a paramétere, és bool-t ad vissza!
 def pelda2(request):
     return HttpResponse('Ez a tesztüzenet2')
 
